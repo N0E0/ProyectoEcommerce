@@ -10,7 +10,7 @@ function App() {
   const [SearchBar, setSearchBar] = useState("");
   const [selectedOption, setSelectedOption] = useState('');
 
-  s
+
   const ordenarProductos = (prod) => {
     const sortedProducts = selectedOption === 'min'
       ? [...prod].sort((a, b) => a.price - b.price)

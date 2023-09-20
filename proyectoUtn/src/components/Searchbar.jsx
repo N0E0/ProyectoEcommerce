@@ -20,7 +20,7 @@ const SearchBar = ({ setSearchBar }) => {
             placeholder="¿Qué estás buscando?"
             ref={searchText}
           />
-          <input type="submit" value="🔍" id="searchBtn" />
+          <input type="submit" value="" id="searchBtn" />
         </div>
       </form>
     </>

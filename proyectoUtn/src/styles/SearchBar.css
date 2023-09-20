@@ -8,10 +8,15 @@
 #searchBtn{
    border: none;
    background-color: rgba(255, 255, 255, 0);
+   width: 20px; 
+   height: 20px; 
+   background-image: url("../../public/lupa.png"); 
+   background-size: cover; 
+   cursor: pointer; 
+   margin-top: 5px;
+   margin-right: 15px;
 }
-/* .forSearch{
-    display: flex;
-} */
+
 .searchBarContainer{
 display: flex;
 border: 1px solid #000;

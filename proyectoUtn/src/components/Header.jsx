@@ -1,6 +1,8 @@
 import SearchBar from "./Searchbar";
 import "../styles/Header.css"
-import Carrito from "./Carrito";
+import { Link } from "react-router-dom";
+
+
 function Header({setSearchBar}) {
 
   return (
@@ -8,7 +10,10 @@ function Header({setSearchBar}) {
     <header>
         <h1>GINOGA</h1>
         <SearchBar setSearchBar={setSearchBar} />
-        <Carrito/>
+        <Link className="user" to={"/user-login"}>Iniciar Sesión </Link>
+        <Link to={"/carrito"}/>
+
+
     </header>
     </>
   );

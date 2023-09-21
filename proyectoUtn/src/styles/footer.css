@@ -1,0 +1,32 @@
+.footer-container{
+    height: 35vh;
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    }
+    
+    .footer{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 35px;
+    }
+    .footer-redes{
+    color: white;
+    display: flex;
+    font-size: 30px;
+
+    }
+    .footer-redes p {
+    padding-top: 10px;
+    padding-right: 20px;
+
+    }
+    
+    .footer-info{
+    color: white;
+    }
+    .footer-info p {
+    padding-top: 14px;
+    color: white;
+    text-decoration: none;
+    }

@@ -1,57 +1,37 @@
-import { useEffect, useState } from "react";
-import "./App.css";
-import Header from "./components/Header";
-import Products from "./components/products";
-import Ordent from "./components/Ordent";
+import {BrowserRouter, Routes, Route} from "react-router-dom";
+import Home from "./Pages/Home";
+import Carrito from "./components/Carrito";
+import UserLogin from "./components/UserLogin"
+import Contact from "./Pages/Contact.jsx";
+import Products from "./Pages/Products";
+import Footer from "./components/Footer";
 import Navbar from "./components/Navbar";
+import Header from "./components/Header"
+import Instruction from "./components/Instruction";
+import Promociones from "./components/Promociones";
+import MediosdePago from "./components/MediosdePagos"
+//import { ProductsContextProvider } from "./Context/ProductsContext";
 
 function App() {
-  const [products, setProducts] = useState([]);
-  const [SearchBar, setSearchBar] = useState("");
-  const [selectedOption, setSelectedOption] = useState('');
-
-
-  const ordenarProductos = (prod) => {
-    const sortedProducts = selectedOption === 'min'
-      ? [...prod].sort((a, b) => a.price - b.price)
-      : selectedOption === 'max'
-      ? [...prod].sort((a, b) => b.price - a.price)
-      : [...prod];
-  
-    return sortedProducts;
-  };
-  
-
- 
-  const handleSelectChange = (event) => {
-    const value = event.target.value;
-    setSelectedOption(value);
-  };
-
-  useEffect(() => {
-    fetch('https://fakestoreapi.com/products')
-      .then(res => res.json())
-      .then(prod => {
-        
-        const sortedProducts = ordenarProductos(prod);
-        setProducts(sortedProducts);
-      });
-  }, [selectedOption]);
-
   return (
-    <>
-      <Header setSearchBar={setSearchBar} />
-        <Navbar/>
-      <div className="container">
-        <Ordent selectedOption={selectedOption} handleSelectChange={handleSelectChange} />
-        <main>
-          {products.map((p) => (
-            <Products p={p} key={p.id} SearchBar={SearchBar} />
-          ))}
-        </main>
-      </div>
-    </>
-  );
+   <BrowserRouter>
+      <Header/>
+      <Navbar/>
+      <Routes>
+        <Route path="/" element={<Home/>}/>
+      <Route path="/carrito" element={<Carrito/>}/>
+      <Route path="/user-login" element={<UserLogin/>}/>
+      <Route path="/productos" element={<Products/>}/>*
+       <Route path="/contacto" element={<Contact/>}/>
+        <Route path="/medios-de-pago" element={<MediosdePago/>}/>
+        <Route path="/promociones" element={<Promociones/>}/>
+        <Route path='*' element={<h3>Ruta inexistente</h3>}/>
+      </Routes>
+
+      <Instruction/>
+      <Footer/>
+    </BrowserRouter>
+  )
 }
 
-export default App;
+export default App

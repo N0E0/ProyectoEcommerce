@@ -4,6 +4,9 @@ article {
   background-color: white;
   margin: 1rem;
   max-width: 15em;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
 }
 article img {
   width: 150px;

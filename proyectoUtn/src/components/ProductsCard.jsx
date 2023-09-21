@@ -1,4 +1,4 @@
-import "../styles/Products.css";
+//import "../styles/Products.css";
 
 function Products({ p, SearchBar }) {
   if (!p.title.toLowerCase().includes(SearchBar.toLowerCase())) {

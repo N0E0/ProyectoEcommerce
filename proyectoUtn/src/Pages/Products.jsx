@@ -1,14 +1,18 @@
 import { useEffect, useState } from "react";
 import Ordent from "../components/Ordent";
 import ProductsCard from "../components/ProductsCard";
-import Header from "../components/Header";
 import "../styles/products.css"
 
 function Products() {
   const [products, setProducts] = useState([]);
   const [SearchBar, setSearchBar] = useState("");
   const [selectedOption, setSelectedOption] = useState('');
+  const [currentPage, setCurrentPage] = useState(1); 
+  const productsPage = 5;
 
+  const page = (pageNumber) => {
+    setCurrentPage (pageNumber);
+  };
 
   const ordenarProductos = (prod) => {
     const sortedProducts = selectedOption === 'min'
@@ -21,32 +25,48 @@ function Products() {
   };
   
 
- 
   const handleSelectChange = (event) => {
     const value = event.target.value;
     setSelectedOption(value);
+    setCurrentPage(1);
+
   };
 
   useEffect(() => {
     fetch('https://fakestoreapi.com/products')
       .then(res => res.json())
       .then(prod => {
-        
         const sortedProducts = ordenarProductos(prod);
         setProducts(sortedProducts);
       });
   }, [selectedOption]);
 
+  const productosInicio = (currentPage - 1) * productsPage;
+  const productosFinal = productosInicio + productsPage;
+
+  const productosMostrados = products.slice(productosInicio, productosFinal);
+
+
   return (
     <>
-      < Header setSearchBar={setSearchBar} />
       <div className="container">
         <Ordent selectedOption={selectedOption} handleSelectChange={handleSelectChange} />
         <main>
-          {products.map((p) => (
+          {productosMostrados.map((p) => (
             <ProductsCard p={p} key={p.id} SearchBar={SearchBar} />
           ))}
         </main>
+      </div>
+      
+
+      <div className="botones">
+      {currentPage>1 &&(
+      <button onClick={()=>page(currentPage-1)}> Atrás</button>
+      )}
+
+      {currentPage< Math.ceil(products.length / productsPage) &&(
+      <button onClick={()=>page(currentPage+1)}>Siguiente</button>
+      )}
       </div>
     </>
   );

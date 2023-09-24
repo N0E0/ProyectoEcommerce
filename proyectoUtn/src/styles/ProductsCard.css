@@ -1,0 +1,32 @@
+
+  article img {
+    width: 150px;
+  }
+  p,h1,h3 {
+    color: black;
+  }
+  .product-description {
+    word-break: break-word;
+  }
+  article {
+    /* box-shadow: 2px ; */
+    padding: 1rem;
+    background-color: white;
+    margin: 1rem;
+    max-width: 15em;
+  }
+  article img {
+    width: 150px;
+  }
+  p,h1,h3 {
+    color: black;
+  }
+  .product-description {
+    word-break: break-word;
+  }
+  .imageContainer {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    height: 55%;
+  }

@@ -4,10 +4,21 @@
   background-color: rgb(3, 29, 68);
   padding: 0.3rem;
   margin-bottom: 2rem;
+ 
 }
-.navtitle {
-  color: rgb(244, 243, 238);
-  padding: 0;
+.navbar{
+  width: 100vw;
+}
+.nav-list{
+  display: flex; 
+  justify-content: space-around;
   margin: 0;
-  font-style: normal;
+  list-style: none;
+}
+
+
+.link{
+  color: rgb(244, 243, 238);
+  text-decoration: none;
+  
 }

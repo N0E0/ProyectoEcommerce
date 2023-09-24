@@ -1,25 +1,15 @@
-article {
-  /* box-shadow: 2px ; */
-  padding: 1rem;
-  background-color: white;
-  margin: 1rem;
-  max-width: 15em;
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-}
-article img {
-  width: 150px;
-}
-p,h1,h3 {
-  color: black;
-}
-.product-description {
-  word-break: break-word;
-}
-.imageContainer {
-  display: grid;
-  align-items: center;
-  justify-content: center;
-  height: 55%;
+main{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    background-color:  rgb(235, 235, 235);
+    /* display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(250px, 1fr));
+    gap: 2rem;
+    margin-left: 2rem; */
+} 
+
+.container{
+    display: flex;
+    
 }

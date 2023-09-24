@@ -2,13 +2,14 @@ import { useEffect, useState } from "react";
 import Ordent from "../components/Ordent";
 import ProductsCard from "../components/ProductsCard";
 import "../styles/products.css"
+import Header from "../components/Header";
 
 function Products() {
   const [products, setProducts] = useState([]);
   const [SearchBar, setSearchBar] = useState("");
   const [selectedOption, setSelectedOption] = useState('');
   const [currentPage, setCurrentPage] = useState(1); 
-  const productsPage = 5;
+  const productsPage = 8;
 
   const page = (pageNumber) => {
     setCurrentPage (pageNumber);
@@ -49,6 +50,7 @@ function Products() {
 
   return (
     <>
+    {/* < Header setSearchBar={setSearchBar} /> */}
       <div className="container">
         <Ordent selectedOption={selectedOption} handleSelectChange={handleSelectChange} />
         <main>

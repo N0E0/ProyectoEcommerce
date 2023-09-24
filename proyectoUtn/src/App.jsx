@@ -10,6 +10,7 @@ import Instruction from "./components/Instruction";
 import Promociones from "./components/Promociones";
 import MediosdePago from "./components/MediosdePagos";
 import Footer from "./components/Footer";
+import "./App.css"
 function App() {
   return (
    <BrowserRouter>

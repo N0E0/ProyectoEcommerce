@@ -5,27 +5,27 @@ function Footer () {
     return (
         <div className='footer-container'>
     
-            <div className="footer">
+            {/* <div className="footer">
                 <div className='footer-redes'>
                     <p>FA</p>
                     <p>TW</p>
                     <p>IN</p>
                     <p>YO</p>
                 </div>
-            </div>
+            </div> */}
     
             <div className="footer">
-                <div className="footer-info">
+                {/* <div className="footer-info">
                 
                     <h2>Servicios</h2>
-                    <Link to={"/productos"}>Catálogo</Link>
-                    <Link to={"/medios-de-pago"}>Medios de pago</Link>
-                    <Link to={"/promociones"}>Promociones</Link>
-                </div>
+                    <Link to={"/productos"}className="link">Catálogo</Link>
+                    <Link to={"/medios-de-pago"}className="link">Medios de pago</Link>
+                    <Link to={"/promociones"}className="link">Promociones</Link>
+                </div> */}
                 <div className="footer-info">
                     <h2>Compra online</h2>
                     <p>Mis pedidos</p>
-                    <Link to={"/carrito"}>Mi carrito</Link>
+                    <Link to={"/carrito"}className="link">Mi carrito</Link>
                     <p>Costo de envío</p>
                 </div>
                 <div className="footer-info">

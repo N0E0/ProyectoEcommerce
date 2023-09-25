@@ -1,15 +1,15 @@
-import miimg from "../../public/carrito-de-compras.png"
-import "../styles/carrito.css"
+import React from "react";
+import { Link } from "react-router-dom";
 
+import miimg from "../../public/carrito-de-compras.png";
+import "../styles/carrito.css";
 
 function Carrito() {
-    return(
-        <>
-        <img src={miimg} alt="carrito" className="imgCarrito" />
-        <p>🛒</p>
-        <p>hola que hace</p>
-        </>
-    )
-    
+  return (
+    <Link to={"/carrito"}>
+      <img src={miimg} alt="carrito" className="imgCarrito" />
+    </Link>
+  );
 }
-export default Carrito
+
+export default Carrito;

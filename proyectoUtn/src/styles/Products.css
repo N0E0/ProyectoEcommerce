@@ -3,10 +3,7 @@ main{
     flex-wrap: wrap;
     flex-direction: row;
     background-color:  rgb(235, 235, 235);
-    /* display: grid;
-    grid-template-columns: repeat(auto-fill,minmax(250px, 1fr));
-    gap: 2rem;
-    margin-left: 2rem; */
+
 } 
 
 .container{

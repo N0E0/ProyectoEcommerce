@@ -1,6 +1,6 @@
 import "../styles/userlogin.css"
 import { useState } from "react";
-//formulario controlado 
+
 
 const UserLogin = (onUserLogin) => {
   const [user, setUser] = useState({
@@ -10,7 +10,7 @@ const UserLogin = (onUserLogin) => {
 
   const handleChange = (e) => {
   setUser((prev)=> ({...prev, [e.target.name]: e.target.value}));
-  }; //la informacion esta en customer guardado
+  }; 
 
   return (
     

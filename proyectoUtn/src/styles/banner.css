@@ -1,9 +1,7 @@
 .banner {
-    background-color: cover;
-    background-position: center;
-    height: 100vh;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-    url("./resource/banner-repositorio.jpg");
+   background-image: url(../assets/img/bannerImg.jpg);
+   background-size: contain;
+   background-position: center;
     }
     
     .banner-container{

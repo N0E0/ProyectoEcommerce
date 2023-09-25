@@ -1,6 +1,10 @@
 import "../styles/ProductsCard.css";
+import { SearchContext } from "../context/SearchContext";
+import { useContext } from "react";
 
-function Products({ p, SearchBar }) {
+function Products({ p, }) {
+  const {SearchBar}= useContext(SearchContext)
+ 
     if (!p.title.toLowerCase().includes(SearchBar.toLowerCase())) {
       return;
       <></>;
@@ -11,7 +15,7 @@ function Products({ p, SearchBar }) {
           <div className="imageContainer">
             <img src={p.image} alt={p.title} />
           </div>
-          <p>${p.price}</p>
+          <p className="price">${p.price}</p>
           <p className="product-description">{p.description.slice(0, 45)}..</p>
         </article>
       );

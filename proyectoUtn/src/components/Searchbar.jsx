@@ -1,16 +1,19 @@
+import { useContext, useRef } from "react";
 import "../styles/SearchBar.css";
-import { useRef } from "react";
+import { SearchContext } from "../context/SearchContext";
 
-const SearchBar = ({ setSearchBar }) => {
-  const searchText = useRef();
-  const handleSearch = (e) => {
-    e.preventDefault();
 
-    setSearchBar(searchText.current.value);
-  };
+const SearchBar = () => {
+ const searchText = useRef();
+ const {handleSearch} = useContext(SearchContext)
+ const handleSubmit = (e)=>{
+  e.preventDefault();
+  handleSearch(searchText.current.value)
+ }
+
   return (
     <>
-      <form onSubmit={handleSearch} className="forSearch">
+      <form onSubmit={handleSubmit} className="forSearch">
         <div className="searchBarContainer">
           <input
             className="buscador"

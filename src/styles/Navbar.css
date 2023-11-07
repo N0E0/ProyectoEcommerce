@@ -1,0 +1,25 @@
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  background-color: rgb(3, 29, 68);
+  padding: 0.3rem;
+  top: 70px;
+  z-index: 100;
+  position: sticky;
+}
+.navbar{
+  width: 100vw;
+}
+.nav-list{
+  display: flex; 
+  justify-content: space-around;
+  margin: 0;
+  list-style: none;
+}
+
+
+.link{
+  color: rgb(244, 243, 238);
+  text-decoration: none;
+  
+}

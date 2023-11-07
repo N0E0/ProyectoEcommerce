@@ -1,0 +1,13 @@
+.ordent-container {
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .select-box {
+    border: none;
+    background: none;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  

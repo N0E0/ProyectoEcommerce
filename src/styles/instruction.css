@@ -1,0 +1,28 @@
+.instruction-container {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 50px 0;
+    margin: 20px;
+    }
+    
+    .instruction {
+    text-align: center;
+    width: 25%;
+    }
+    
+    .instruction h3 {
+    font-size: 26px;
+    }
+    .instruction h2 {
+        font-size: 45px;
+        }
+
+    
+    .instruction p {
+    font-size: 16px;
+    color: black;
+    }
+    
+    .instruction h1 {
+    font-size: 70px;
+    }

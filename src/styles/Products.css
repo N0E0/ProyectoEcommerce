@@ -1,0 +1,20 @@
+main{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  background-color:  rgb(235, 235, 235);
+  margin-top: 10px;
+} 
+
+.container{
+  display: flex;
+  
+}
+.botones{
+  display: flex;
+  justify-content: center;
+}
+.button{
+  width: 10vw;
+  margin-right: 10px;
+}

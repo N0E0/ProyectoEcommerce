@@ -20,7 +20,7 @@ label {
   margin-bottom: 8px;
   font-weight: bold;
 }
-
+/* 
 input[type="text"],
 input[type="password"] {
   width: 95%;
@@ -28,7 +28,7 @@ input[type="password"] {
   margin-bottom: 16px;
   border: 1px solid #ccc;
   border-radius: 3px;
-}
+} */
 
 button {
   width: 100%;

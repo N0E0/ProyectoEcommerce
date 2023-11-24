@@ -12,7 +12,11 @@ import MediosdePago from "./components/MediosdePagos";
 import Footer from "./components/Footer";
 import "./App.css"
 import { SearchContextProvider } from "./context/SearchContext";
+
+
+
 function App() {
+
   return (
     <SearchContextProvider>
 

@@ -18,14 +18,20 @@ function Products() {
     setCurrentPage(pageNumber);
   };
 
-  useEffect(() => {
-    fetch("https://fakestoreapi.com/products")
-      .then((res) => res.json())
-      .then((prod) => {
-        const sortedProducts = ordenarProductos(prod);
-        setProducts(sortedProducts);
-      });
+  function getAllDistributions(url) {
+    useEffect(() => {
+      fetch(url)
+        .then((res) => res.json())
+        .then((prod) => {
+          const sortedProducts = ordenarProductos(prod);
+          setProducts(sortedProducts);
+        });
     }, [selectedOption, SearchBar]);
+  }
+
+  getAllDistributions("http://localhost:3301/Instrumentos")
+
+
 
 
   useEffect(() => {
@@ -36,8 +42,8 @@ function Products() {
     const sortedProducts = selectedOption === 'min'
       ? [...prod].sort((a, b) => a.price - b.price)
       : selectedOption === 'max'
-      ? [...prod].sort((a, b) => b.price - a.price)
-      : [...prod];
+        ? [...prod].sort((a, b) => b.price - a.price)
+        : [...prod];
 
     return sortedProducts;
   };
@@ -49,22 +55,22 @@ function Products() {
   };
 
   const productosFiltrados = SearchBar
-  ? products.filter((p) =>
+    ? products.filter((p) =>
       p.title.toLowerCase().includes(SearchBar.toLowerCase())
     )
-  : products;
+    : products;
 
-const inicioProducto = (currentPage - 1) * productsPage;
-const finProducto = inicioProducto + productsPage;
+  const inicioProducto = (currentPage - 1) * productsPage;
+  const finProducto = inicioProducto + productsPage;
 
-const productosMostrados = productosFiltrados.slice(inicioProducto, finProducto);
+  const productosMostrados = productosFiltrados.slice(inicioProducto, finProducto);
 
   // if(products < 5){
   //  const productosMostrados = products.slice(productosInicio, productosFinal)
   //   } else {
   //     const productosMostrados = products
   //   }
-    
+
 
   return (
     <>

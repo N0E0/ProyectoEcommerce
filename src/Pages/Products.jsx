@@ -29,7 +29,7 @@ function Products() {
     }, [selectedOption, SearchBar]);
   }
 
-  getAllDistributions("http://localhost:3301/Instrumentos")
+  getAllDistributions("http://localhost:3301/instrumentos")
 
 
 

@@ -17,8 +17,13 @@ export default function Navbar() {
             </Link>
           </li>
           <li>
-            <Link to={"/contacto"} className="link">
-              Contacto
+            <Link to={"/sugerencias"} className="link">
+              Sugerencias
+            </Link>
+          </li>
+          <li>
+            <Link to={"/Newproduct"} className="link">
+              Nuevo Producto
             </Link>
           </li>
         </ul>

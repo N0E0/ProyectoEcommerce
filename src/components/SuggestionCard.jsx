@@ -3,6 +3,28 @@ import { SearchContext } from "../context/SearchContext";
 import { useContext } from "react";
 
 function SuggestionCard({ p, }) {
+
+  const handleDelete = (e) => {
+    fetch(`http://localhost:3301/sugerencias/${p.id}`, {
+      method: 'DELETE',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+    }).then(response => response.json())
+      .then(data => {
+        console.log('Respuesta del servidor:', data);
+        setTimeout(() => {
+          window.location.reload();
+        }, 2000);
+      })
+      .catch(error => {
+        console.error('Error en la solicitud:', error);
+      });
+  }
+
+
+
+
   const {SearchBar}= useContext(SearchContext)
  
     if (!p.title.toLowerCase().includes(SearchBar.toLowerCase())) {
@@ -16,6 +38,7 @@ function SuggestionCard({ p, }) {
             <img src={p.image} alt={p.title} />
           </div>
           <p className="product-description">{p.description.slice(0, 45)}..</p>
+          <button onClick={handleDelete} >BORRAR</button>
         </article>
       );
     }

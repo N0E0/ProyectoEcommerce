@@ -1,0 +1,27 @@
+form label {
+    color: black;
+    display: flex;
+    flex-direction: column;
+    padding: 10px 0;
+    }
+    form input {
+    padding: 10px;
+    border-radius: 10px;
+    width: 20rem;
+    margin-bottom: 10px;
+    }
+    .form-container {
+    display: flex;
+    flex-direction: column;
+    border: solid black;
+    padding: 50px;
+    height: 300px;
+    width: 20rem;
+    justify-content: center;
+    align-items: center;
+    }
+    form button {
+    margin-top: 10px;
+    width: 21rem;
+    padding: 8px;
+    }

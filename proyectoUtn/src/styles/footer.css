@@ -1,0 +1,14 @@
+.footer-container{
+    background-color: rgb(3, 29, 68);
+    }
+.footer{
+    color: aliceblue;
+    display: flex;
+    justify-content: space-around;
+}
+.footer-info{
+    color: aliceblue;
+}
+.footer-info, h2, p{ 
+    color: aliceblue;
+}

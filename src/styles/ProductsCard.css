@@ -1,0 +1,47 @@
+.product-card{
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 15px;
+  margin: 10px;
+  text-align: center;
+  transition: transform 0.2s ease-in-out;
+}
+  article img {
+    width: 150px;
+  }
+  p,h5 {
+    color: black;
+  }
+  .product-description {
+    word-break: break-word;
+  }
+  article {
+    padding: 1rem;
+    background-color: white;
+    margin: 1rem;
+    max-width: 15em;
+    color: black;
+    border-radius: 10px;
+  }
+  article img {
+    width: 150px;
+  }
+  p,h1,h3 {
+    color: black;
+  }
+  .product-description {
+    word-break: break-word;
+    color: black;
+    padding-bottom: 5px ;
+  }
+  .imageContainer {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    height: 55%;
+  }
+  .price{
+    color: black;
+  }
+  

@@ -1,0 +1,30 @@
+/* MobileNavMenu.css */
+.mobile-nav-menu {
+    background-color: #ffffff;
+    padding: 20px;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+  }
+  
+  .mobile-nav-menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .mobile-nav-menu li {
+    margin-bottom: 10px;
+  }
+  
+  .mobile-nav-menu a {
+    text-decoration: none;
+    color: #333333;
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  

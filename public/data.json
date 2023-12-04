@@ -1,0 +1,166 @@
+[
+    {
+      "id": 1,
+      "type": "guitar",
+      "name": "Fender Stratocaster Electric Guitar",
+      "description": "Fender Stratocaster electric guitar with alder body and single-coil pickups.",
+      "price": 999.99,
+      "image": "electric_guitar.jpg"
+    },
+    {
+      "id": 2,
+      "type": "guitar",
+      "name": "Taylor 814ce Acoustic Guitar",
+      "description": "Taylor 814ce acoustic guitar with solid spruce top and rosewood back and sides.",
+      "price": 2499.99,
+      "image": "acoustic_guitar.jpg"
+    },
+    {
+      "id": 3,
+      "type": "piano",
+      "name": "Yamaha P-125 Digital Piano",
+      "description": "Yamaha P-125 digital piano with weighted keys and high-quality sound.",
+      "price": 799.99,
+      "image": "digital_piano.jpg"
+    },
+    {
+      "id": 4,
+      "type": "piano",
+      "name": "Hammond XK-5 Organ",
+      "description": "Hammond XK-5 organ with authentic vintage sounds and waterfall keyboard.",
+      "price": 2799.99,
+      "image": "organ.jpg"
+    },
+    {
+      "id": 5,
+      "type": "flute",
+      "name": "Yamaha YFL-212 Flute",
+      "description": "Yamaha YFL-212 flute with offset G key and clear sound.",
+      "price": 599.99,
+      "image": "flute.jpg"
+    },
+    {
+      "id": 6,
+      "type": "flute",
+      "name": "Wooden Recorder",
+      "description": "Wooden recorder with precise tuning and warm tone.",
+      "price": 29.99,
+      "image": "recorder.jpg"
+    },
+    {
+      "id": 7,
+      "type": "drum",
+      "name": "Mapex Armory Acoustic Drum Kit",
+      "description": "Mapex Armory 5-piece acoustic drum kit with maple shells and sturdy hardware.",
+      "price": 1399.99,
+      "image": "drum_kit.jpg"
+    },
+    {
+      "id": 8,
+      "type": "drum",
+      "name": "Roland TD-17KV Electronic Drum Kit",
+      "description": "Roland TD-17KV electronic drum kit with sound module and mesh pads.",
+      "price": 1499.99,
+      "image": "electronic_drum_kit.jpg"
+    },
+    {
+      "id": 9,
+      "type": "violin",
+      "name": "Stradivarius Professional Violin",
+      "description": "Handcrafted Stradivarius professional violin with select woods.",
+      "price": 2499.99,
+      "image": "professional_violin.jpg"
+    },
+    {
+      "id": 10,
+      "type": "violin",
+      "name": "Student Violin",
+      "description": "Student violin with decent quality, suitable for beginners.",
+      "price": 299.99,
+      "image": "student_violin.jpg"
+    },
+    {
+      "id": 11,
+      "type": "trumpet",
+      "name": "Bach Stradivarius Trumpet",
+      "description": "Bach Stradivarius trumpet with brass bell and excellent projection.",
+      "price": 1499.99,
+      "image": "trumpet.jpg"
+    },
+    {
+      "id": 12,
+      "type": "trumpet",
+      "name": "Student Trumpet",
+      "description": "Student trumpet with good playability, perfect for beginners.",
+      "price": 299.99,
+      "image": "student_trumpet.jpg"
+    },
+    {
+      "id": 13,
+      "type": "harp",
+      "name": "Concert Harp by Lyon & Healy",
+      "description": "47-string Lyon & Healy concert harp with an elegant design.",
+      "price": 8999.99,
+      "image": "concert_harp.jpg"
+    },
+    {
+      "id": 14,
+      "type": "harp",
+      "name": "Student Harp",
+      "description": "22-string student harp with a lightweight design for easy learning.",
+      "price": 499.99,
+      "image": "student_harp.jpg"
+    },
+    {
+      "id": 15,
+      "type": "guitar",
+      "name": "Gibson Les Paul Electric Guitar",
+      "description": "Gibson Les Paul electric guitar with mahogany body and humbucker pickups.",
+      "price": 1299.99,
+      "image": "gibson_les_paul.jpg"
+    },
+    {
+      "id": 16,
+      "type": "guitar",
+      "name": "Cordoba C5 Classical Guitar",
+      "description": "Cordoba C5 classical guitar with cedar top and mahogany back and sides.",
+      "price": 399.99,
+      "image": "cordoba_c5.jpg"
+    },
+    {
+      "id": 17,
+      "type": "piano",
+      "name": "Korg SV-2 Digital Keyboard",
+      "description": "Korg SV-2 digital keyboard with authentic vintage sounds and weighted keys.",
+      "price": 1399.99,
+      "image": "korg_sv2.jpg"
+    },
+    {
+      "id": 18,
+      "type": "piano",
+      "name": "Steinway & Sons Grand Piano",
+      "description": "Steinway & Sons concert grand piano with exceptional sound.",
+      "price": 29999.99,
+      "image": "steinway_piano.jpg"
+    },
+    {
+      "id": 19,
+      "type": "flute",
+      "name": "Yamaha YFL-312 Transverse Flute",
+      "description": "Yamaha YFL-312 transverse flute with closed-hole keys and clear sound.",
+      "price": 799.99,
+      "image": "yamaha_flute.jpg"
+    },
+    {
+      "id": 20,
+      "type": "flute",
+      "name": "Andean Pan Flute",
+      "description": "Andean pan flute handcrafted from natural cane.",
+      "price": 49.99,
+      "image": "andean_pan_flute.jpg"
+    }
+  ]
+  
+  
+  
+ 

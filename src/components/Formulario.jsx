@@ -45,3 +45,26 @@ function formulario() {
 }
 
 export default formulario;
+
+/*
+<body>
+  <form enctype="multipart/form-data" id="form">
+    <input type="file" name="archivo" id="archivo">
+    <button type="submit">Enviar</button>
+  </form>
+
+  <script>
+    const form = document.querySelector("#form")
+    const input = document.querySelector("#archivo");
+
+    form.addEventListener("submit", (e) => {
+      e.preventDefault()
+      console.log(e.target.archivo.files[0]);
+      console.log(input.files[0]);
+    })
+  </script>
+</body>
+
+
+http://localhost:3001/api/granjas?categoria=Verdura para  bucar por jid
+*/

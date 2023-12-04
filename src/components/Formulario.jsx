@@ -28,6 +28,7 @@ function Formulario() {
         console.error('Error en la solicitud:', error);
         // Manejar errores aquí
       });
+      window.location.reload()
   }
 
   const handleChange = (e) => {

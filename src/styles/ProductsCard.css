@@ -3,13 +3,11 @@
   border-radius: 5px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   padding: 15px;
-  margin: 10px;
+  /* margin: 10px; */
   text-align: center;
   transition: transform 0.2s ease-in-out;
+
 }
-  article img {
-    width: 150px;
-  }
   p,h5 {
     color: black;
   }
@@ -19,7 +17,7 @@
   article {
     padding: 1rem;
     background-color: white;
-    margin: 1rem;
+    /* margin: 1rem; */
     max-width: 15em;
     color: black;
     border-radius: 10px;
@@ -43,5 +41,11 @@
   }
   .price{
     color: black;
+  }
+  @media (max-width: 768px) {
+    article{
+      max-width: 12.5em;
+      margin: 0;
+    }
   }
   

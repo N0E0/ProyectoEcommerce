@@ -15,43 +15,33 @@ function Products() {
 
 
 ////////////////////////////////////////////////////LO QUE AGREGUE
-  const [selectedCategorias, setSelectedCategorias] = useState([]);
+const [selectedCategorias, setSelectedCategorias] = useState([]);
 
-  const getAllDistributions = async (url) => {
-    try {
-      const res = await fetch(url);
-  
-      if (!res.ok) {
-        throw new Error(`Network response was not ok: ${res.status}`);
-      }
-      const prod = await res.json();
-      const sortedProducts = ordenarProductos(prod);
-      setProducts(sortedProducts);
-    } catch (error) {
-      console.error('Error fetching data:', error);
+
+
+const getAllDistributions = async (url) => {
+  try {
+    const res = await fetch(url);
+
+    if (!res.ok) {
+      throw new Error(`Network response was not ok: ${res.status}`);
     }
-  };
-  
 
-
-
-  const handleCategoriaChange = (categoria) => {
-    setSelectedCategorias((prevSelected) =>
-      prevSelected.includes(categoria)
-        ? prevSelected.filter((cat) => cat !== categoria)
-        : [...prevSelected, categoria]
-    );
-  };
-
-
+    const prod = await res.json();
+    const sortedProducts = ordenarProductos(prod);
+    setProducts(sortedProducts);
+  } catch (error) {
+    console.error('Error fetching data:', error);
+  }
+};
 
 useEffect(() => {
-  const url = `http://localhost:3301/Instrumentos${
-    selectedCategorias.length > 0 ? `?categorias=${selectedCategorias.join('&categorias=')}` : ''
-  }`;
-
   const fetchProductos = async () => {
     try {
+      const url = `http://localhost:3301/Instrumentos${
+        selectedCategorias.length > 0 ? `?categorias=${selectedCategorias.join('&categorias=')}` : ''
+      }`;
+
       await getAllDistributions(url);
     } catch (error) {
       console.error('Error fetching productos:', error);
@@ -62,16 +52,11 @@ useEffect(() => {
 }, [selectedOption, SearchBar, selectedCategorias, currentPage]);
 
 
-const handleCheckboxChange = (categoria) => {
-  setSelectedCategorias((prevSelected) =>
-    prevSelected.includes(categoria)
-      ? prevSelected.filter((cat) => cat !== categoria)
-      : [...prevSelected, categoria]
-  );
+const handleCategoriaChange = (updatedCategorias) => {
+  setSelectedCategorias(updatedCategorias);
 };
-////////////////////////////////////////////////////////// LO QUE AGREGUE
 
-  
+////////////////////////////////////////////////////////// LO QUE AGREGUE
   const ordenarProductos = (prod) => {
     const sortedProducts = selectedOption === 'min'
       ? [...prod].sort((a, b) => a.price - b.price)
@@ -82,7 +67,6 @@ const handleCheckboxChange = (categoria) => {
     return sortedProducts;
   };
  
-  
 
   const handleSelectChange = (event) => {
     const value = event.target.value;
@@ -105,7 +89,7 @@ const handleCheckboxChange = (categoria) => {
     <>
       <div className="container">
         <Ordent selectedOption={selectedOption} handleSelectChange={handleSelectChange} />
-        <CategoriasContainer handleCategoriaChange={handleCategoriaChange} selectedCategorias={selectedCategorias} handleCheckboxChange={handleCheckboxChange}/>
+        <CategoriasContainer handleCategoriaChange={handleCategoriaChange} />
 
         <main>
           {productosMostrados.map((p, index) => (

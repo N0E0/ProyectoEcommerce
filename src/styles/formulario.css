@@ -1,0 +1,38 @@
+.centerForm {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 2em;
+  padding-bottom: 2em;
+}
+
+.suggestionForm {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 45%;
+}
+
+.suggestionFieldset {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-color: #f0f0f0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.imglogo {
+  width: 55%;
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  margin-top: 0.8em;
+  margin-bottom: 0.8em;
+}
+.p-fieldset{
+  color: black;
+  font-weight: bold;
+}

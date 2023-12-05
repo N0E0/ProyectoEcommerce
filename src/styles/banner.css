@@ -1,0 +1,30 @@
+.banner {
+  position: relative;
+}
+
+.carrousel-home {
+  position: relative;
+  max-width: 100%; 
+}
+
+.banner-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  
+}
+
+.banner-text h1 {
+  margin: 0;
+  font-size: 3em;
+  color: white;
+  text-shadow: 2px 2px 4px rgba(189, 181, 181, 0.5);
+}
+
+.banner-text .eslogan {
+  font-size: 1.3em;
+  color: white;
+  text-shadow: 2px 2px 4px rgba(189, 181, 181, 0.5);
+}
